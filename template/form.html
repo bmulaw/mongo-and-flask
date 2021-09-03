@@ -7,10 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{url_for('form')}}" method="POST" >
-        <input type="text" name="name" id="name" placeholder="name">
+    <h3>
+        Name a movie and your rating of it to put in mongo database
+    </h3>
+    <form action="{{url_for('insert_film')}}" method="POST" >
+        <input type="text" name="name" id="name" placeholder="film name">
         <br><br>
-        <input type="number" name="num" id="num" placeholder="fav number">
+        <input type="number" name="num" id="num" placeholder="rate movie (1-10)">
         <br><br>
         <button type="submit" name="submit" value="value"> submit </button>
     </form>
