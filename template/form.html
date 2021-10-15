@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/form.css') }}">
     <title>Form Page</title>
 </head>
 <body>
-    
     <div class="container-contact100">
-        
-    <form action="{{url_for('insert_film')}}" method="POST" >
-        <h3>
-            Please fill out this form to stay in touch!
-        </h3>
-        <br>
-        <input class="input100" type="text" name="name" id="name" placeholder="Name">
-        <br>
-        <input class="input100" type="email" name="email" placeholder="Email">
-        <br>
-        <input class="input100" type="tel" id="phone" name="phone"
-               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
-               placeholder="Format: 123-456-7890">
-        <br>
-        <input class="input100" type="text" name="message" id="message" placeholder="Message">
-        <br><br>
-        <button class="contact100-form-btn" type="submit" name="submit" > submit </button>
-    </form>
+        <form action="{{url_for('insert_film')}}" method="POST" >
+            <h3>Please fill out this form to stay in touch!</h3>
+            <br>
+            <input class="input100" type="text" name="name" id="name" placeholder="Name">
+            <br>
+            <input class="input100" type="email" name="email" placeholder="Email">
+            <br>
+            <input class="input100" type="tel" id="phone" name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                placeholder="Format: 123-456-7890">
+            <br>
+            <input class="input100" type="text" name="message" id="message" placeholder="Message">
+            <br>
+            <button class="contact100-form-btn" type="submit" name="submit" > submit </button>
+        </form>
     </div>
-
-    <h5>
-        {{forms}}
-    </h5>
+    <h5>{{forms}}</h5>
 </body>
 </html>
