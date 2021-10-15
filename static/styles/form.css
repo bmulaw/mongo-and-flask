@@ -1,23 +1,5 @@
 * {
     margin: 0px; 
-    padding: 0px; 
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
-    font-family: Ubuntu-Bold, sans-serif;
-}
-
-input {
-    outline: none;
-    border: none;
-}
-
-button {
-    outline: none !important;
-    border: none;
-    background: transparent;
 }
 
 button:hover {
@@ -25,44 +7,11 @@ button:hover {
 }
 
 .container-contact100 {
-width: 100%;  
 min-height: 100vh;
 display: flex;
-flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-padding: 15px;
-position: relative;
 background-color: #f2f2f2;
-}
-
-.wrap-contact100 {
-width: 550px;
-background: transparent;
-padding: 50px 0px 160px 0px;
-}
-
-.contact100-form {
-width: 100%;
-}
-
-.contact100-form-title {
-display: block;
-font-size: 30px;
-color: #403866;
-line-height: 1.2;
-text-transform: uppercase;
-text-align: center;
-padding-bottom: 49px;
-}
-
-.wrap-input100 {
-width: 100%;
-background-color: #fff;
-border-radius: 31px;
-margin-bottom: 16px;
-position: relative;
-z-index: 1;
 }
 
 .input100 {
