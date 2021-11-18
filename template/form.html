@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="container-contact100">
-        <form action="{{url_for('insert_film')}}" method="POST" >
+        <form action="{{url_for('insert_customer')}}" method="POST" >
             <h3>Please fill out this form to stay in touch!</h3>
             <br>
             <input class="input100" type="text" name="name" id="name" placeholder="Name">
@@ -22,6 +22,6 @@
             <button class="contact100-form-btn" type="submit" name="submit" > submit </button>
         </form>
     </div>
-    <h5>{{forms}}</h5>
+    <h5>This is a list of all my customers in my database: {{customers}}</h5>
 </body>
 </html>

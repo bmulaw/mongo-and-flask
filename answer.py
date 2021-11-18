@@ -8,7 +8,7 @@ mongodb_client = PyMongo(app)
 db = mongodb_client.db
 
 @app.route('/', methods =["POST", "GET"])
-def insert_film():
+def insert_customer():
     name = request.form.get('name')
     email = request.form.get('email')
     phone = request.form.get('phone')
@@ -20,8 +20,8 @@ def insert_film():
         'message': message
         })
 
-    x   = [i for i in db.form.find()]
-    return render_template('form.html', forms=x)
+    customers   = [i["name"] for i in db.form.find()]
+    return render_template('form.html', customers=customers)
 
 if __name__ == '__main__':
     app.run(debug=True)
